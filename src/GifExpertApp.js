@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
+import { AddCategoryComponent } from './components/AddCategory'
 
 export const GifExpertApp = () => {
 
-    const [categories, setCategorie] = useState(['Do', 'Re', 'Mi'])
+    const [categories, setCategory] = useState(['Do', 'Re', 'Mi'])
 
-    const OkAddCategoriClick = () => {
+    const OkAddCategoriClick = (newValue) => {
         // add 1: create new array, copying values
         //setCategorie(['nuevo', ...categories])
-        // add 2: with callback, add new item
-        setCategorie(currentValue => ['hoa', ...currentValue])
     }
+
     return (
         <>
             <h4>GifExpertApp</h4>
             <hr />
-            <button onClick={OkAddCategoriClick}>Agregar ss</button>
+            <AddCategoryComponent  setCategory={setCategory} />
             <ol>
                 {
                     categories.map(item => {
