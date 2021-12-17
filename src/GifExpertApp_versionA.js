@@ -1,24 +1,20 @@
 import React, { useState } from 'react'
 import { AddCategoryComponent } from './components/AddCategory'
+import { Listitem } from './components/ListItems_versionA'
 
-export const GifExpertApp = () => {
+export const GifExpertApp_versionA = () => {
 
     const [categories, setCategory] = useState(['Do', 'Re', 'Mi'])
-
-    const OkAddCategoriClick = (newValue) => {
-        // add 1: create new array, copying values
-        //setCategorie(['nuevo', ...categories])
-    }
-
+ 
     return (
         <>
             <h4>GifExpertApp</h4>
             <hr />
-            <AddCategoryComponent  setCategory={setCategory} />
+            <AddCategoryComponent setCategory={setCategory} />
             <ol>
                 {
                     categories.map(item => {
-                        return <li key={item}>{item}</li>
+                        return <Listitem key={item} category={item} />
                     })
                 }
             </ol>
