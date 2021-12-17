@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Components debe igualar el snapshot 1`] = `
+<div
+  className="card animate__animated animate__fadeIn"
+>
+  <img
+    alt="hola"
+    src="http://direccion"
+  />
+  <p>
+    hola
+  </p>
+</div>
+`;
