@@ -15,7 +15,7 @@ export const useFetchGifs = (category) => {
                         data: imgs,
                         loading: false
                     })
-                }, 1000)
+                }, 500) //medio minuto
             })
     }, [category])
 
