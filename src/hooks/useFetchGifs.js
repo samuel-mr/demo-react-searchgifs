@@ -15,7 +15,7 @@ export const useFetchGifs = (category) => {
                         data: imgs,
                         loading: false
                     })
-                }, 500) //medio minuto
+                }, 300) //de menos de medio minuto porque las pruebas no pasan (time out)
             })
     }, [category])
 
