@@ -1,10 +1,11 @@
 import React from 'react'
 import { ListItemImage } from './ListItemImage'
 import { useFetchGifs } from '../hooks/useFetchGifs'
+import { PropTypes } from 'prop-types'
 
 export const ListItems_versionB = ({ category }) => {
 
-    const { data:images, loading } = useFetchGifs(category)
+    const { data: images, loading } = useFetchGifs(category)
 
 
     return (
@@ -23,4 +24,8 @@ export const ListItems_versionB = ({ category }) => {
             </div>
         </>
     )
+}
+
+ListItems_versionB.propTypes = {
+    category: PropTypes.string.isRequired
 }

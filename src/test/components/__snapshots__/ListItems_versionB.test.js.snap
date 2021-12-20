@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing ListItem_versionB Debe mostrar items cuando se cargan las imagenes 1`] = `
+<Fragment>
+  <h1
+    className="animate__animated animate__slideInDown"
+  >
+    simple
+  </h1>
+  <div
+    className="card-grid"
+  >
+    <ListItemImage
+      id={123}
+      key="123"
+      title="demo"
+      url="http:direcion.com"
+    />
+    <ListItemImage
+      id={1235}
+      key="1235"
+      title="demo"
+      url="http:direcion.com"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`testing ListItem_versionB Debe ser igual al snapshot 1`] = `
+<Fragment>
+  <h1
+    className="animate__animated animate__slideInDown"
+  >
+    simple
+  </h1>
+  <div
+    className="animate__animated animate__flash"
+  >
+    Cargando... 
+  </div>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;

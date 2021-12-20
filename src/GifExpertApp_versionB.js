@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { AddCategoryComponent } from './components/AddCategory'
+import { AddCategory } from './components/AddCategory'
 import { ListItems_versionB } from './components/ListItems_versionB'
 
 export const GifExpertApp_versionB = () => {
@@ -10,7 +10,7 @@ export const GifExpertApp_versionB = () => {
         <>
             <h4>GifExpertApp</h4>
             <hr />
-            <AddCategoryComponent setCategory={setCategory} />
+            <AddCategory setCategory={setCategory} />
             <ol>
                 {
                     categories.map(item => {
