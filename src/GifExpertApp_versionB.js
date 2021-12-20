@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import { AddCategory } from './components/AddCategory'
 import { ListItems_versionB } from './components/ListItems_versionB'
 
-export const GifExpertApp_versionB = () => {
+export const GifExpertApp_versionB = ({ defaultArray = ['Do', 'Re', 'Mi'] }) => {
 
-    const [categories, setCategory] = useState(['Do', 'Re', 'Mi'])
- 
+    const [categories, setCategory] = useState(defaultArray)
+
     return (
         <>
             <h4>GifExpertApp</h4>
